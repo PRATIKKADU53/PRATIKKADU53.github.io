@@ -1,287 +1,215 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Pratik Deepak Kadu - Embedded Systems Engineer
-Portfolio">
- <meta name="keywords" content="Pratik Kadu, embedded systems, electronics,
-engineering, portfolio">
- <meta name="author" content="Pratik Deepak Kadu">
- <title>Pratik Deepak Kadu | Portfolio</title>
- <link
-href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swa
-p" rel="stylesheet">
- <style>
- * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- }
- body {
- font-family: 'Roboto', sans-serif;
- line-height: 1.6;
- background: #f4f4f4;
- color: #333;
- scroll-behavior: smooth;
- }
- header {
- background: #fff;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
- position: fixed;
- width: 100%;
- top: 0;
- z-index: 100;
- }
- nav {
- max-width: 1200px;
- margin: 0 auto;
- padding: 20px;
- }
- nav ul {
- list-style: none;
- display: flex;
- justify-content: center;
- }
- nav ul li {
- margin: 0 20px;
- }
- nav ul li a {
- text-decoration: none;
- color: #333;
- font-weight: 400;
- font-size: 1.1em;
- }
- nav ul li a:hover,
- nav ul li a.active {
- color: #007bff;
- border-bottom: 2px solid #007bff;
- }
- .hero {
- text-align: center;
- padding: 150px 20px 100px;
- background: #fff;
- }
- .hero h1 {
- font-size: 2.8em;
- margin-bottom: 10px;
- }
- .hero p {
- font-size: 1.3em;
- color: #666;
- margin-bottom: 20px;
- }
- .cta {
- display: inline-block;
- padding: 12px 25px;
- background: #007bff;
- color: #fff;
- text-decoration: none;
- border-radius: 5px;
- font-weight: 400;
- }
- .cta:hover {
- background: #0056b3;
- }
- section {
- max-width: 800px;
- margin: 40px auto;
- padding: 30px;
- background: #fff;
- border-radius: 8px;
- box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
- }
- h2 {
- font-size: 2em;
- margin-bottom: 20px;
- color: #007bff;
- }
- h3 {
- font-size: 1.5em;
- margin-bottom: 10px;
- }
- .about img {
- max-width: 200px;
- border-radius: 50%;
- margin: 20px auto;
- display: block;
- }
- .about p {
- margin-bottom: 15px;
- }
- .projects .project {
- margin-bottom: 40px;
- }
- .projects img {
- max-width: 100%;
- height: auto;
- border-radius: 8px;
- margin: 15px 0;
- }
- .projects p {
- margin-bottom: 10px;
- }
- .project-link {
- color: #007bff;
- text-decoration: none;
- font-weight: 400;
- }
- .project-link:hover {
- text-decoration: underline;
- }
- .skills ul {
- list-style: none;
- margin-bottom: 20px;
- }
- .skills ul li {
- background: #e9ecef;
- padding: 10px;
- margin: 5px 0;
- border-radius: 5px;
- }
- .contact p {
- margin-bottom: 15px;
- }
- .contact a {
- color: #007bff;
- text-decoration: none;
- }
- .contact a:hover {
- text-decoration: underline;
- }
- footer {
- text-align: center;
- padding: 20px;
- background: #333;
- color: #fff;
- margin-top: 40px;
- }
- @media (max-width: 768px) {
- nav ul {
- flex-direction: column;
- text-align: center;
- }
- nav ul li {
- margin: 10px 0;
- }
- .hero {
- padding: 100px 20px 50px;
- }
- .hero h1 {
- font-size: 2em;
- }
- .hero p {
- font-size: 1.1em;
- }
- section {
- margin: 20px;
- padding: 20px;
- }
- h2 {
- font-size: 1.8em;
- }
- .about img {
- max-width: 150px;
- }
- }
- </style>
-</head>
-<body>
- <header>
- <nav>
- <ul>
- <li><a href="#home" class="active">Home</a></li>
- <li><a href="#about">About</a></li>
- <li><a href="#projects">Projects</a></li>
- <li><a href="#skills">Skills</a></li>
- <li><a href="#contact">Contact</a></li>
- <li><a href="resume.pdf" target="_blank">Resume</a></li>
- </ul>
- </nav>
- </header>
- <section id="home" class="hero">
- <h1>Pratik Deepak Kadu</h1>
- <p>Embedded Systems Engineer</p>
- <a href="#projects" class="cta">View My Work</a>
- </section>
- <section id="about" class="about">
- <h2>About Me</h2>
- <img src=PRATIK.jpg alt="Pratik Deepak Kadu">
- <p>I am Pratik Deepak Kadu, a passionate embedded systems engineer pursuing my
-B.Tech in Electronics and Telecommunication at MIT Academy of Engineering. My interest in
-embedded systems stems from a desire to create practical solutions that improve
-everyday life.</p>
- <p>I enjoy tinkering with hardware and software to build innovative projects, such as
-my smart helmet for accident detection, which aims to enhance road safety. In my free
-time, I explore new technologies and participate in hackathons to challenge myself and
-learn from others.</p>
- <p><strong>Career Objective:</strong> To design and develop embedded systems that
-prioritize safety and reliability, contributing to innovative solutions in electronics and
-telecommunications.</p>
- <p><strong>Education:</strong> Pursuing B.Tech in Electronics and
-Telecommunication, MIT Academy of Engineering.</p>
- </section>
- <section id="projects" class="projects">
- <h2>My Projects</h2>
- <div class="project">
- <h3>Custom PCB Design for Environmental Monitoring System</h3>
-
- <p>Designed a custom Printed Circuit Board (PCB) for a system that monitors
-temperature, humidity, and air quality. The system is low-cost, low-power, and easy to
-deploy in various settings.</p>
- <p><strong>Technologies:</strong> Eagle, Arduino Uno, DHT22, MQ-135, 16x2
-LCD</p>
- <p><strong>Role:</strong> Led schematic creation, PCB layout, and firmware
-programming.</p>
- <p><a href="#" class="project-link">GitHub Link
-https://github.com/PRATIKKADU53</a></p>
- </div>
- <div class="project">
- <h3>Smart Helmet for Accident Detection</h3>
-
- <p>Developed a smart helmet that detects accidents using an accelerometer and
-sends SMS alerts via a GSM module, enhancing road safety.</p>
- <p><strong>Technologies:</strong> Arduino Nano, ADXL335, SIM800L, Piezo
-Buzzer</p>
- <p><strong>Role:</strong> Designed hardware circuit, programmed firmware, and
-tested reliability.</p>
- <p><a href="#" class="project-link">GitHub Link
-https://github.com/PRATIKKADU53</a></p>
- </div>
- </section>
- <section id="skills" class="skills">
- <h2>My Skills</h2>
- <h3>Technical Skills</h3>
- <ul>
- <li>Programming: C, C++, Python</li>
- <li>Microcontrollers: Arduino, Raspberry Pi</li>
- <li>Hardware Design: Eagle, KiCad</li>
- <li>Sensors: Temperature, Humidity, Accelerometers</li>
- <li>Communication Protocols: I2C, SPI, UART</li>
- <li>Operating Systems: Linux, Windows</li>
- </ul>
- <h3>Soft Skills</h3>
- <ul>
- <li>Problem-Solving</li>
- <li>Teamwork</li>
- <li>Communication</li>
- <li>Time Management</li>
- <li>Attention to Detail</li>
- </ul>
- </section>
- <section id="contact" class="contact">
- <h2>Contact Me</h2>
- <p>Email: <a
-href="mailto:pratikkadu2021@gmail.com">pratikkadu2021@gmail.com</a></p>
- <p>Phone: 7774911303</p>
- <p>LinkedIn: <a href="https://www.linkedin.com/in/pratik-kadu-3a39ab312"
-target="_blank">Pratik Kadu</a></p>
- <p>GitHub: <a href="https://github.com/PRATIKKADU53"
-target="_blank">PRATIKKADU53</a></p>
- <p>Feel free to reach out for collaborations or opportunities!</p>
- </section>
- <footer>
- <p>© 2025 Pratik Deepak Kadu. All rights reserved.</p>
- </footer>
-</body>
-</html>
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Pratik Deepak Kadu - Embedded Systems Engineer Portfolio"> 
+    <meta name="keywords" content="Pratik Kadu, embedded systems, electronics, engineering, portfolio"> 
+    <meta name="author" content="Pratik Deepak Kadu"> 
+    <title>Pratik Deepak Kadu | Portfolio</title> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swa p" rel="stylesheet"> 
+    <style> 
+        * { 
+            margin: 0;             padding: 0;             box-sizing: border-box; 
+        } 
+ 
+        body {             font-family: 'Roboto', sans-serif;             line-height: 1.6;             background: #f4f4f4;             color: #333;             scroll-behavior: smooth; 
+        } 
+ 
+        header {             background: #fff;             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);             position: fixed;             width: 100%;             top: 0;             z-index: 100; 
+        } 
+ 
+        nav { 
+            max-width: 1200px;             margin: 0 auto;             padding: 20px; 
+        } 
+ 
+        nav ul {             list-style: none;             display: flex;             justify-content: center; 
+        } 
+ 
+        nav ul li {             margin: 0 20px; 
+        } 
+ 
+        nav ul li a {             text-decoration: none;             color: #333;             font-weight: 400;             font-size: 1.1em; 
+        } 
+ 
+        nav ul li a:hover,         nav ul li a.active {             color: #007bff;             border-bottom: 2px solid #007bff; 
+        } 
+ 
+        .hero {             text-align: center;             padding: 150px 20px 100px;             background: #fff; 
+        } 
+ 
+        .hero h1 {             font-size: 2.8em;             margin-bottom: 10px; 
+        } 
+ 
+        .hero p { 
+            font-size: 1.3em;             color: #666;             margin-bottom: 20px; 
+        } 
+ 
+        .cta {             display: inline-block;             padding: 12px 25px;             background: #007bff; 
+            color: #fff;             text-decoration: none;             border-radius: 5px;             font-weight: 400; 
+        } 
+ 
+        .cta:hover {             background: #0056b3; 
+        } 
+ 
+        section {             max-width: 800px;             margin: 40px auto;             padding: 30px;             background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+ 
+h2 { 
+            font-size: 2em;             margin-bottom: 20px;             color: #007bff; 
+        } 
+ 
+        h3 {             font-size: 1.5em;             margin-bottom: 10px; 
+        } 
+ 
+        .about img {             max-width: 200px;             border-radius: 50%;             margin: 20px auto;             display: block; 
+        } 
+ 
+        .about p {             margin-bottom: 15px; 
+        } 
+ 
+        .projects .project { 
+margin-bottom: 40px; .projects img {             max-width: 100%;             height: auto;             border-radius: 8px;             margin: 15px 0; 
+        } 
+ 
+        .projects p {             margin-bottom: 10px; 
+        } 
+ 
+        .project-link {             color: #007bff;             text-decoration: none;             font-weight: 400; 
+        } 
+ 
+        .project-link:hover {             text-decoration: underline; 
+        } 
+ 
+        .skills ul { 
+list-style: none; margin-bottom: 20px; .skills ul li {             background: #e9ecef;             padding: 10px;             margin: 5px 0;             border-radius: 5px; 
+        } 
+ 
+        .contact p {             margin-bottom: 15px; 
+        } 
+ 
+        .contact a {             color: #007bff;             text-decoration: none; 
+        } 
+ 
+        .contact a:hover {             text-decoration: underline; 
+        } 
+ 
+        footer {             text-align: center; padding: 20px; background: #333; 
+ 
+            color: #fff;             margin-top: 40px; 
+        } 
+ 
+        @media (max-width: 768px) { 
+            nav ul {                 flex-direction: column;                 text-align: center; 
+            } 
+ 
+            nav ul li {                 margin: 10px 0; 
+            } 
+ 
+            .hero { 
+                padding: 100px 20px 50px; 
+            } 
+ 
+            .hero h1 {                 font-size: 2em; 
+            } 
+ 
+            .hero p {                 font-size: 1.1em; 
+} 
+ 
+            section {                 margin: 20px;                 padding: 20px; 
+            } 
+             h2 { 
+                font-size: 1.8em; 
+            } 
+ 
+            .about img {                 max-width: 150px; 
+            } 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <ul> 
+                <li><a href="#home" class="active">Home</a></li> 
+                <li><a href="#about">About</a></li> 
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+                <li><a href="resume.pdf" target="_blank">Resume</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+ 
+    <section id="home" class="hero"> 
+        <h1>Pratik Deepak Kadu</h1> 
+        <p>Embedded Systems Engineer</p> 
+        <a href="#projects" class="cta">View My Work</a> 
+    </section> 
+ 
+    <section id="about" class="about"> 
+        <h2>About Me</h2> 
+        <img src="https://via.placeholder.com/200" alt="Pratik Deepak Kadu"> 
+        <p>I am Pratik Deepak Kadu, a passionate embedded systems engineer pursuing my B.Tech in Electronics and Telecommunication at MIT Academy of Engineering. My interest in embedded systems stems from a desire to create practical solutions that improve everyday life.</p> 
+        <p>I enjoy tinkering with hardware and software to build innovative projects, such as my smart helmet for accident detection, which aims to enhance road safety. In my free time, I explore new technologies and participate in hackathons to challenge myself and learn from others.</p> 
+        <p><strong>Career Objective:</strong> To design and develop embedded systems that prioritize safety and reliability, contributing to innovative solutions in electronics and telecommunications.</p> 
+        <p><strong>Education:</strong> Pursuing B.Tech in Electronics and 
+Telecommunication, MIT Academy of Engineering.</p> 
+    </section> 
+ 
+    <section id="projects" class="projects"> 
+        <h2>My Projects</h2> 
+<div class="project"> 
+            <h3>Custom PCB Design for Environmental Monitoring System</h3> 
+             
+            <p>Designed a custom Printed Circuit Board (PCB) for a system that monitors temperature, humidity, and air quality. The system is low-cost, low-power, and easy to deploy in various settings.</p> 
+            <p><strong>Technologies:</strong> Eagle, Arduino Uno, DHT22, MQ-135, 16x2 LCD</p> 
+            <p><strong>Role:</strong> Led schematic creation, PCB layout, and firmware programming.</p> 
+            <p><a href="#" class="project-link">GitHub Link https://github.com/PRATIKKADU53</a></p> 
+        </div> 
+        <div class="project"> 
+            <h3>Smart Helmet for Accident Detection</h3> 
+           
+            <p>Developed a smart helmet that detects accidents using an accelerometer and sends SMS alerts via a GSM module, enhancing road safety.</p> 
+            <p><strong>Technologies:</strong> Arduino Nano, ADXL335, SIM800L, Piezo Buzzer</p> 
+            <p><strong>Role:</strong> Designed hardware circuit, programmed firmware, and tested reliability.</p> 
+            <p><a href="#" class="project-link">GitHub Link https://github.com/PRATIKKADU53</a></p> 
+        </div> 
+    </section> 
+ 
+    <section id="skills" class="skills"> 
+        <h2>My Skills</h2> 
+<h3>Technical Skills</h3> 
+        <ul> 
+            <li>Programming: C, C++, Python</li> 
+            <li>Microcontrollers: Arduino, Raspberry Pi</li> 
+            <li>Hardware Design: Eagle, KiCad</li> 
+            <li>Sensors: Temperature, Humidity, Accelerometers</li> 
+            <li>Communication Protocols: I2C, SPI, UART</li> 
+            <li>Operating Systems: Linux, Windows</li> 
+        </ul> 
+        <h3>Soft Skills</h3> 
+        <ul> 
+            <li>Problem-Solving</li> 
+            <li>Teamwork</li> 
+            <li>Communication</li> 
+            <li>Time Management</li> 
+            <li>Attention to Detail</li> 
+        </ul> 
+    </section> 
+ 
+    <section id="contact" class="contact"> 
+        <h2>Contact Me</h2> 
+        <p>Email: <a 
+href="mailto:pratikkadu2021@gmail.com">pratikkadu2021@gmail.com</a></p> 
+        <p>Phone: 7774911303</p> 
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/pratik-kadu-3a39ab312" target="_blank">Pratik Kadu</a></p> 
+<p>GitHub: <a href="https://github.com/PRATIKKADU53" target="_blank">PRATIKKADU53</a></p> 
+        <p>Feel free to reach out for collaborations or opportunities!</p> 
+    </section> 
+ 
+    <footer> 
+        <p>© 2025 Pratik Deepak Kadu. All rights reserved.</p> 
+    </footer> 
+</body> 
+</html> 
