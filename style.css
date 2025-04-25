@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f0f2f5;
+    color: #1a252f;
+    line-height: 1.6;
+}
+
+header {
+    background: #1a252f;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00ddeb;
+}
+
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1a252f, #2e3b4e);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #00ddeb;
+    color: #1a252f;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 700;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ddeb;
+}
+
+section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #007bff;
+}
+
+.about {
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 1rem auto;
+    border: 3px solid #00ddeb;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.project-card p {
+    padding: 0 1rem;
+    color: #666;
+}
+
+.project-link {
+    display: block;
+    padding: 0 1rem 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.skill-list li {
+    background: #1a252f;
+    color: #00ddeb;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact label {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.8rem;
+    border: 2px solid #1a252f;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #00ddeb;
+    outline: none;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links p {
+    margin: 0.5rem 0;
+}
+
+.contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #1a252f;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    nav { flex-direction: column; gap: 1rem; }
+    nav ul { flex-direction: column; align-items: center; gap: 1rem; }
+    .hero h1 { font-size: 2rem; }
+    .hero p { font-size: 1.1rem; }
+    .project-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .hero { padding: 4rem 1rem; }
+    .hero h1 { font-size: 1.8rem; }
+    .cta { padding: 0.6rem 1.2rem; }
+    h2 { font-size: 1.8rem; }
+    .profile-img { width: 150px; height: 150px; }
+}
